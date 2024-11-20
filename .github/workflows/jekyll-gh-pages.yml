@@ -23,7 +23,7 @@ jobs:
 
     - name: Build Angular project
       env:
-          NODE_OPTIONS: --openssl-legacy-provider
+        NODE_OPTIONS: --openssl-legacy-provider
       run: npm run build -- --base-href "/angular_test/"
 
     - name: Deploy to GitHub Pages
